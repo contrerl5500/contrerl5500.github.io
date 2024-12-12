@@ -1,0 +1,478 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap');
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url('gym_building.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+/* Header and Navigation */
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.logo img {
+    max-height: 50px;
+    border-radius: 5px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #27ae60;
+}
+
+.signup-btn .cta-button {
+    background-color: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.signup-btn .cta-button:hover {
+    background-color: #2ecc71;
+}
+
+/* Main Content */
+main {
+    flex: 1;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 15px;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background-color: #ecf0f1;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.hero h1 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 2.5rem;
+}
+
+.hero p {
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+.hero .cta-button {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #27ae60;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .cta-button:hover {
+    background-color: #2ecc71;
+}
+
+/* Workout Cards */
+.featured-workouts {
+    margin-bottom: 30px;
+}
+
+.featured-workouts h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2c3e50;
+}
+
+.featured-workouts .workout-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.workout-cards .card {
+    flex-basis: 48%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.workout-cards .card:hover {
+    transform: translateY(-10px);
+}
+
+.card img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin: 15px 0;
+    height: 250px;
+    object-fit: cover;
+}
+/*
+.explore a {
+    display: flex;
+    margin-top: 10px;
+    background-color: #3498db;
+    color: white;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+}*/
+
+.explore {
+    height: 200px;
+    position: relative;
+    
+}
+
+.explore-btn a{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    display: flex;
+    background-color: #038de9;
+    color: white;
+    padding: 8px 14px;
+    text-decoration:none;
+    border-radius: 4px;
+    
+}
+
+.explore-btn:hover {
+    background-color: #2fdc1f;
+}
+
+/* Signup Form Styles */
+.signup-form {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.signup-form h2 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.signup-form button {
+    width: 100%;
+    padding: 12px;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+    background-color: #2ecc71;
+}
+
+.daycare-message {
+    text-align: center;
+    margin-top: 20px;
+    color: #7f8c8d;
+}
+
+.gym-image {
+    background-image: url('gym_facility.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+}
+
+/* Hours of Operation Table */
+.hours-of-operation {
+    max-width: 400px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.hours-of-operation table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.hours-of-operation th, 
+.hours-of-operation td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.hours-of-operation th {
+    background-color: #2c3e50;
+    color: white;
+}
+
+/* About Us Styles */
+.about-us-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.about-us-content h1, 
+.about-us-content h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+.about-us-content a {
+    color: #100dc4;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.about-us-content a:hover {
+    color: #2ecc71;
+    text-decoration: underline;
+}
+
+.wrapper .button:hover {
+    width: 200px;
+}
+
+.wrapper .button .icon {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    margin: 0 5px;
+    background: #fff;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.social-media {
+    margin: 20px auto;
+}
+
+.social-media .wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap;
+    padding: 10px;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.icon {
+    display: inline-block;
+    height: 60px;
+    width: 60px;
+    background: #fff;
+    border-radius: 50px;
+    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+.icon i {
+    font-size: 25px;
+    color: #333;
+}
+
+.icon:hover {
+    background: #ccc;
+}
+
+.button:hover .icon i {
+    color: white;
+}
+
+.wrapper .button:nth-child(1):hover .icon {
+    background: #4267b2;
+}
+
+.wrapper .button:nth-child(2):hover .icon {
+    background: #FFFC00;
+}
+
+.wrapper .button:nth-child(3):hover .icon {
+    background: #833AB4;
+}
+
+.wrapper .button:nth-child(4):hover .icon {
+    background: #1DA1F2;
+}
+
+.wrapper .button .icon i {
+    font-size: 25px;
+    color: #333;
+    line-height: 60px;
+    transition: all 0.3s ease-out;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+}
+
+/* Placeholder Sections */
+.youtube-video,
+.team-image,
+.gym-image {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.youtube-video img,
+.team-image img,
+.gym-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    max-height: 400px;
+    object-fit: cover;
+}
+
+.nutrition {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(224, 3, 3, 0.1);
+    margin-bottom: 20px;
+    width: 600px;
+    
+}
+
+.workouts {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(224, 3, 3, 0.1);
+    margin-bottom: 20px;
+    width: 600px;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin: 15px 0;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .featured-workouts .workout-cards,
+    .signup-form,
+    .hours-of-operation {
+        flex-direction: column;
+    }
+
+    .workout-cards .card {
+        flex-basis: 100%;
+        margin-bottom: 20px;
+    }
+}
